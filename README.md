@@ -1,5 +1,6 @@
 # Pagocards PHP Laravel SDK
 
+[![CI](https://github.com/pagocards/php-laravel/actions/workflows/ci.yml/badge.svg)](https://github.com/pagocards/php-laravel/actions/workflows/ci.yml)
 [![Latest Version](https://img.shields.io/github/v/release/pagocards/php-laravel)](https://github.com/pagocards/php-laravel/releases)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
 [![PHP Version](https://img.shields.io/badge/php-%5E8.1-blue.svg)](https://www.php.net/)
