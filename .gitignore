@@ -1,0 +1,40 @@
+# Dependencies
+vendor/
+composer.lock
+
+# Testing
+coverage/
+.phpunit.cache/
+.idea/
+.vscode/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.AppleDouble
+.LSOverride
+._*
+
+# Build artifacts
+build/
+dist/
+
+# Logs
+*.log
+logs/
+
+# Misc
+.php-cs-fixer.cache
+
