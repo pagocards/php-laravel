@@ -14,7 +14,7 @@ class ClientTest extends TestCase
         $this->client = new Client(
             'test_public_key',
             'test_secret_key',
-            'https://api.test.pagocards.com'
+            'https://test.pagocards.com'
         );
     }
 
@@ -31,7 +31,7 @@ class ClientTest extends TestCase
      */
     public function testGetBaseUrl()
     {
-        $this->assertEquals('https://api.test.pagocards.com', $this->client->getBaseUrl());
+        $this->assertEquals('https://test.pagocards.com', $this->client->getBaseUrl());
     }
 
     /**
@@ -39,8 +39,8 @@ class ClientTest extends TestCase
      */
     public function testSetBaseUrl()
     {
-        $this->client->setBaseUrl('https://api.pagocards.com');
-        $this->assertEquals('https://api.pagocards.com', $this->client->getBaseUrl());
+        $this->client->setBaseUrl('https://pagocards.com');
+        $this->assertEquals('https://pagocards.com', $this->client->getBaseUrl());
     }
 
     /**
@@ -48,8 +48,8 @@ class ClientTest extends TestCase
      */
     public function testSetBaseUrlRemovesTrailingSlash()
     {
-        $this->client->setBaseUrl('https://api.pagocards.com/');
-        $this->assertEquals('https://api.pagocards.com', $this->client->getBaseUrl());
+        $this->client->setBaseUrl('https://pagocards.com/');
+        $this->assertEquals('https://pagocards.com', $this->client->getBaseUrl());
     }
 
     /**
@@ -57,7 +57,7 @@ class ClientTest extends TestCase
      */
     public function testMethodChaining()
     {
-        $result = $this->client->setBaseUrl('https://api.pagocards.com');
+        $result = $this->client->setBaseUrl('https://pagocards.com');
         $this->assertInstanceOf(Client::class, $result);
     }
 }

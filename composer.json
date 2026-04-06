@@ -1,6 +1,6 @@
 {
-  "name": "pagocards/pagocards-sdk",
-  "description": "Official PHP SDK for Pagocards - Card Issuance and Virtual Wallet Solutions",
+  "name": "pagocards/php-laravel",
+  "description": "Official PHP Laravel SDK for Pagocards card issuance and wallet APIs",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -19,7 +19,12 @@
     "api",
     "laravel"
   ],
-  "homepage": "https://github.com/pagocards/pagocards-php-sdk",
+  "homepage": "https://github.com/pagocards/php-laravel",
+  "support": {
+    "issues": "https://github.com/pagocards/php-laravel/issues",
+    "source": "https://github.com/pagocards/php-laravel",
+    "email": "cs@pagocards.com"
+  },
   "require": {
     "php": "^8.1",
     "guzzlehttp/guzzle": "^7.0",
@@ -44,6 +49,9 @@
       "providers": [
         "Pagocards\\SDK\\ServiceProvider"
       ]
+    },
+    "branch-alias": {
+      "dev-main": "1.x-dev"
     }
   },
   "scripts": {

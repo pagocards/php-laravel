@@ -1,6 +1,6 @@
-# Pagocards PHP SDK
+# Pagocards PHP Laravel SDK
 
-[![Latest Version](https://img.shields.io/github/v/release/pagocards/pagocards-php-sdk)](https://github.com/pagocards/pagocards-php-sdk/releases)
+[![Latest Version](https://img.shields.io/github/v/release/pagocards/php-laravel)](https://github.com/pagocards/php-laravel/releases)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
 [![PHP Version](https://img.shields.io/badge/php-%5E8.1-blue.svg)](https://www.php.net/)
 
@@ -28,7 +28,8 @@ The official PHP SDK for **Pagocards** - A powerful card issuance and virtual wa
 ### Via Composer (From GitHub)
 
 ```bash
-composer require pagocards/pagocards-sdk:dev-main --repository github:pagocards/pagocards-php-sdk
+composer config repositories.pagocards vcs https://github.com/pagocards/php-laravel
+composer require pagocards/php-laravel:^1.0
 ```
 
 Or add to your `composer.json`:
@@ -38,11 +39,11 @@ Or add to your `composer.json`:
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/pagocards/pagocards-php-sdk"
+      "url": "https://github.com/pagocards/php-laravel"
     }
   ],
   "require": {
-    "pagocards/pagocards-sdk": "dev-main"
+    "pagocards/php-laravel": "^1.0"
   }
 }
 ```
@@ -58,7 +59,7 @@ composer install
 When the package is available on Packagist:
 
 ```bash
-composer require pagocards/pagocards-sdk
+composer require pagocards/php-laravel:^1.0
 ```
 
 ## Configuration
@@ -114,9 +115,9 @@ $card = Pagocards::getCard('card_id', 'visacard');
 // List cards
 $cards = Pagocards::listCards('visacard', 1, 50);
 
-// Block/Unblock card
-Pagocards::toggleCard('card_id', 'block', 'visacard');
-Pagocards::toggleCard('card_id', 'unblock', 'visacard');
+// Block/Unblock Mastercard
+Pagocards::toggleCard('card_id', 'block', 'mastercard');
+Pagocards::toggleCard('card_id', 'unblock', 'mastercard');
 
 // Get wallet balance
 $balance = Pagocards::getBalance();
@@ -130,7 +131,7 @@ use Pagocards\SDK\Client;
 $client = new Client(
     'your_public_key',
     'your_secret_key',
-    'https://api.pagocards.com'
+    'https://pagocards.com'
 );
 
 // Use all the same methods as the facade
@@ -207,14 +208,14 @@ Pagocards::listCards('visacard', $page = 1, $perPage = 50);
 Pagocards::fundVisacard('card_id', 100.00);
 ```
 
-#### Block Card
+#### Block Mastercard
 ```php
-Pagocards::toggleCard('card_id', 'block', 'visacard');
+Pagocards::toggleCard('card_id', 'block', 'mastercard');
 ```
 
-#### Unblock Card
+#### Unblock Mastercard
 ```php
-Pagocards::toggleCard('card_id', 'unblock', 'visacard');
+Pagocards::toggleCard('card_id', 'unblock', 'mastercard');
 ```
 
 ### Wallet
@@ -247,7 +248,7 @@ try {
 ### Change Base URL
 
 ```php
-Pagocards::setBaseUrl('https://api.pagocards.com');
+Pagocards::setBaseUrl('https://pagocards.com');
 ```
 
 ### Get Current Base URL
@@ -277,8 +278,8 @@ Coverage reports will be generated in the `coverage/` directory.
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/pagocards/pagocards-php-sdk.git
-cd pagocards-php-sdk
+git clone https://github.com/pagocards/php-laravel.git
+cd php-laravel
 ```
 
 ### Install Dependencies
@@ -307,7 +308,7 @@ composer test
 
 This error typically means the request is being sent to an invalid URL. Ensure:
 - `PAGOCARDS_API_URL` is set correctly in `.env`
-- The base URL is the full domain (e.g., `https://api.pagocards.com`)
+- The base URL is the full domain (e.g., `https://pagocards.com`)
 
 ### "An email must have a "To", "Cc", or "Bcc" header"
 
@@ -333,7 +334,7 @@ For complete documentation and API reference, visit:
 For support and questions:
 - Email: [support@pagocards.com](mailto:support@pagocards.com)
 - Website: [https://pagocards.com](https://pagocards.com)
-- GitHub Issues: [github.com/pagocards/pagocards-php-sdk/issues](https://github.com/pagocards/pagocards-php-sdk/issues)
+- GitHub Issues: [github.com/pagocards/php-laravel/issues](https://github.com/pagocards/php-laravel/issues)
 
 ## License
 

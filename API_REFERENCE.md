@@ -19,7 +19,7 @@ Complete API reference for the Pagocards PHP SDK.
 ```php
 use Pagocards\SDK\Client;
 
-$client = new Client($publicKey, $secretKey, $baseUrl = 'https://api.pagocards.com');
+$client = new Client($publicKey, $secretKey, $baseUrl = 'https://pagocards.com');
 ```
 
 **Parameters:**
@@ -32,7 +32,7 @@ $client = new Client($publicKey, $secretKey, $baseUrl = 'https://api.pagocards.c
 $client = new Client(
     'pk_live_xxxxx',
     'sk_live_xxxxx',
-    'https://api.pagocards.com'
+    'https://pagocards.com'
 );
 ```
 
@@ -441,7 +441,7 @@ public function getBaseUrl(): string
 **Example:**
 ```php
 $url = $client->getBaseUrl();
-echo $url; // https://api.pagocards.com
+echo $url; // https://pagocards.com
 ```
 
 ---

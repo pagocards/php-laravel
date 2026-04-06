@@ -22,7 +22,7 @@ class ServiceProvider extends LaravelServiceProvider
             return new Client(
                 $config['public_key'] ?? env('PAGOCARDS_PUBLIC_KEY'),
                 $config['secret_key'] ?? env('PAGOCARDS_SECRET_KEY'),
-                $config['base_url'] ?? env('PAGOCARDS_API_URL', 'https://api.pagocards.com')
+                $config['base_url'] ?? env('PAGOCARDS_API_URL', 'https://pagocards.com')
             );
         });
     }

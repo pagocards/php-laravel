@@ -1,6 +1,6 @@
-# Contributing to Pagocards PHP SDK
+# Contributing to Pagocards PHP Laravel SDK
 
-Thank you for considering contributing to the Pagocards PHP SDK! We welcome all contributions and appreciate your effort to improve this project.
+Thank you for considering contributing to the Pagocards PHP Laravel SDK! We welcome all contributions and appreciate your effort to improve this project.
 
 ## Getting Started
 
@@ -16,8 +16,8 @@ Thank you for considering contributing to the Pagocards PHP SDK! We welcome all 
 
 ```bash
 # Clone your forked repository
-git clone https://github.com/YOUR_USERNAME/pagocards-php-sdk.git
-cd pagocards-php-sdk
+git clone https://github.com/YOUR_USERNAME/php-laravel.git
+cd php-laravel
 
 # Install dependencies
 composer install
@@ -84,7 +84,7 @@ Please be respectful and professional in all interactions. We are committed to p
 
 ## Questions?
 
-Feel free to reach out to us at [support@pagocards.com](mailto:support@pagocards.com) or open an issue on GitHub.
+Feel free to reach out to us at [cs@pagocards.com](mailto:cs@pagocards.com) or open an issue on GitHub.
 
 Thank you for contributing!
 

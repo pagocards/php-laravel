@@ -31,7 +31,7 @@ php --version
 If the SDK is not yet on Packagist, add the GitHub repository to your `composer.json`:
 
 ```bash
-composer config repositories.pagocards vcs https://github.com/pagocards/pagocards-php-sdk
+composer config repositories.pagocards vcs https://github.com/pagocards/php-laravel
 ```
 
 Or manually edit your `composer.json`:
@@ -41,7 +41,7 @@ Or manually edit your `composer.json`:
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/pagocards/pagocards-php-sdk"
+      "url": "https://github.com/pagocards/php-laravel"
     }
   ]
 }
@@ -50,13 +50,13 @@ Or manually edit your `composer.json`:
 ### Step 2: Install the SDK
 
 ```bash
-composer require pagocards/pagocards-sdk:dev-main
+composer require pagocards/php-laravel:^1.0
 ```
 
 Or when available on Packagist:
 
 ```bash
-composer require pagocards/pagocards-sdk
+composer require pagocards/php-laravel:^1.0
 ```
 
 ### Step 3: Verify Installation
@@ -64,7 +64,7 @@ composer require pagocards/pagocards-sdk
 Check that the SDK is installed:
 
 ```bash
-composer show pagocards/pagocards-sdk
+composer show pagocards/php-laravel
 ```
 
 ## Configuration
@@ -126,7 +126,7 @@ You should see your wallet balance if the configuration is correct.
 Run the SDK tests:
 
 ```bash
-cd vendor/pagocards/pagocards-sdk
+cd vendor/pagocards/php-laravel
 composer test
 ```
 
@@ -174,7 +174,7 @@ Ensure `PAGOCARDS_API_URL` is set to the complete domain:
 PAGOCARDS_API_URL=https://pagocards.com
 ```
 
-Not just `api.pagocards.com` (must include https://)
+Not just `pagocards.com` without the protocol prefix (it must include `https://`).
 
 ### Issue: "Call to undefined method Pagocards::..."
 
@@ -223,7 +223,7 @@ Once installed and verified:
 If you encounter any issues:
 
 - **Email:** [support@pagocards.com](mailto:support@pagocards.com)
-- **GitHub Issues:** [github.com/pagocards/pagocards-php-sdk/issues](https://github.com/pagocards/pagocards-php-sdk/issues)
+- **GitHub Issues:** [github.com/pagocards/php-laravel/issues](https://github.com/pagocards/php-laravel/issues)
 - **Documentation:** [docs.pagocards.com](https://docs.pagocards.com)
 
 ---
